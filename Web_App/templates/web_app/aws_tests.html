@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+
+    <style>
+        .groove {
+            border-style: groove;  
+            margin: 10px;
+            border-width: 1.5px;
+            border-color: coral;
+        }
+        .button {
+          display: inline-block;
+          padding: 10px 20px;
+          font-size: 15px;
+          cursor: pointer;
+          text-align: center;
+          text-decoration: none;
+          outline: none;
+          color: #fff;
+          background-color: #4CAF50;
+          border: none;
+          border-radius: 10px;
+          box-shadow: 0 4px #999;
+        }
+        
+        .button:hover {
+            background-color: #3e8e41
+        }
+        
+        .button:active {
+          background-color: #3e8e41;
+          box-shadow: 0 5px #666;
+          transform: translateY(4px);
+        }
+    </style>
+    
+<div class="header" >
+        <h1 style="color:blue;font-size:20px;" >Select topics for preparation :</h1>
+</div>
+
+<form>
+
+    <table class="groove" >
+
+        <tr>
+            <td><input type="checkbox" /> SQS   &nbsp;   </td> 
+            <td><input type="checkbox" /> Cloud Trail   &nbsp;   </td>
+            <td><input type="checkbox" /> EC2   &nbsp;   </td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" /> Lambda   &nbsp;   </td>
+            <td><input type="checkbox" /> IAM   &nbsp;   </td>
+            <td><input type="checkbox" /> SNS   &nbsp;   </td>
+        </tr>
+        
+        <tr>
+            <td><input type="checkbox" /> Cloud Watch   &nbsp;   </td>
+            <td><input type="checkbox" /> VPC   &nbsp;   </td>
+            <td><input type="checkbox" /> SQS   &nbsp;   </td>
+        </tr>
+
+    </table>
+
+    <p></p>
+    
+    <a onclick="window.location.href='/aws_start_test'"  class="button" >Start Test</a>
+  
+</form>
+<br>
+<br>
+
+<style>  
+    div {  
+      padding-left: 10px;  
+      padding-bottom: 5px;  
+    }  
+</style>  
+
+<form  class="groove" >
+    <p></p>
+    <div  class="header" >
+        <p></p>
+        <h1 align="center" style="color:red;font-size:20px;" > Instructions for test :</h1>
+        <i> *   Exam duration : 30 min</i><br>
+        <i> *   This text is italic</i><br>
+        <i> *   This text is italic</i><br>
+    </div>
+</form>
+    
+</html>
