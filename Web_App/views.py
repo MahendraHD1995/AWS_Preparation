@@ -23,18 +23,29 @@ def about_me(request):
 def aws_test(request):  
     context = {}
     context['form'] = ExampleForm()
-    context ={}
-    aws_topics = ['SQS','Cloud Trail','EC2','Lambda','IAM','SNS','Cloud Watch','VPC']
+    
     context = {
         "data" : ['SQS','Cloud Trail','EC2','Lambda','IAM','SNS','Cloud Watch','VPC'],
     }
-
-    context['form'] = InputForm()
-    if request.GET:
-        print(request.GET.getlist('favorite_colors'))
+    print("Mahendra")
+    request.GET.getlist('Project')
+    
+    if request.POST:
+        print("Inside post :")
+        print(request.GET.getlist())
     return render(request,'web_app/aws_tests.html',context)
 
+# def aws_start_test(request):
+#     return render(request,'web_app/aws_start_test.html')
+
 def aws_start_test(request):
+    try:
+        if request.method=="POST":
+            for q in request.POST.items():
+                print(q)
+    except:
+        pass
+
     return render(request,'web_app/aws_start_test.html')
 
 @login_required(login_url='login')

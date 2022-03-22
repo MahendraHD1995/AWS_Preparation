@@ -37,12 +37,13 @@
         <h1 style="color:blue;font-size:20px;" >Select topics for preparation :</h1>
 </div>
 
-<form  method="POST" >
+<form action = "{% url 'aws_start_test' %}" method="POST" >
+    {% csrf_token %}
 
         {% for i in data %}
-        <table   method="POST"  ></table>
+        <table   method="GET"  ></table>
             <tr>
-                <td> <input  type="checkbox"  /> {{i}}   &nbsp;   </td>
+                <td> <input  type="checkbox" name="{{ i }}" value="{{i}}"  /> {{i}}   &nbsp;   </td>
                     {% empty %}
                 <li>Sorry, no athletes in this list.</li>
             </tr>
@@ -51,7 +52,10 @@
 
     <p></p>
     
-    <a onclick="window.location.href='/aws_start_test'"  class="button" >Start Test</a>
+ 
+    <button type="submit"   class="button" >Start Test</button>
+    
+    
   
 </form>
 
