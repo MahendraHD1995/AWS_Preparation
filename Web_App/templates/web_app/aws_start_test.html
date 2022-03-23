@@ -39,11 +39,11 @@
         {% for i in aws_questions %}
         <table   method="GET"  ></table>
             <tr>
-                <td> <p style="font-style: italic;color:blue;"  type="text"   > &nbsp;{{i.0}} &nbsp; {{i.1}}   &nbsp;  </b> </p>
-                  <td> <input  type="radio" name="{{ i }}" value="OPTION_A" /> {{i.2}}   &nbsp;   </td><br> 
-                  <td> <input  type="radio" name="{{ i }}" value="OPTION_B" /> {{i.3}}   &nbsp;   </td><br> 
-                  <td> <input  type="radio" name="{{ i }}" value="OPTION_C" /> {{i.4}}   &nbsp;   </td><br> 
-                  <td> <input  type="radio" name="{{ i }}" value="OPTION_D"/> {{i.5}}   &nbsp;   </td><br> 
+                <td> <p style="font-style: italic;color:blue;"  type="text"   > &nbsp;{{i.ID}} &nbsp; {{i.QUESTION}}   &nbsp;  </b> </p>
+                  <td> <input  type="radio" name="{{ i }}" value="OPTION_A" /> {{i.OPTION_A}}   &nbsp;   </td><br> 
+                  <td> <input  type="radio" name="{{ i }}" value="OPTION_B" /> {{i.OPTION_B}}   &nbsp;   </td><br> 
+                  <td> <input  type="radio" name="{{ i }}" value="OPTION_C" /> {{i.OPTION_C}}   &nbsp;   </td><br> 
+                  <td> <input  type="radio" name="{{ i }}" value="OPTION_D"/> {{i.OPTION_D}}   &nbsp;   </td><br> 
                     {% empty %}
                 <li>Sorry, no athletes in this list.</li>
             </tr>

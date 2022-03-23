@@ -3,14 +3,6 @@ from django import forms
   
 # creating a form 
 
-FAVORITE_COLORS_CHOICES = [
-    ('blue', 'Blue'),
-    ('green', 'Green'),
-    ('black', 'Black'),
-]
-
-class ExampleForm(forms.Form):
-    favorite_colors = forms.MultipleChoiceField(widget=forms.CheckboxSelectMultiple,choices=FAVORITE_COLORS_CHOICES,)
 
 class AWS_Topics_Selected(forms.Form):
     SQS = forms.BooleanField(required = False)
