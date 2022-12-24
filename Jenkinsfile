@@ -5,16 +5,15 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                 sh 'pip install -r requirements.txt'
-                 sh 'python manage.py startapp AWS_Preparation'
-                 sh 'python manage.py runserver'
+                 sh 'pip3 install -r requirements.txt'
+                 sh 'python3 manage.py runserver'
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing..'
 
-                sh 'python manage.py test'
+                sh 'python3 manage.py test'
             }
         }
         stage('Deploy') {
