@@ -20,3 +20,37 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+
+# python manage.py startapp appname => create a Django app
+# python manage.py runserver
+
+
+
+
+# sudo systemctl status jenkins
+# sudo systemctl enable --now jenkins
+# sudo ufw allow 8080
+# sudo ufw status
+# sudo ufw enable
+# http://localhost:8080
+# sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+# ps -ef | grep -i [J]enkins
+# sudo service jenkins restart
+# sudo rm -rf /var/cache/jenkins/*
+
+# jenkins integration
+
+# virtualenv AWS_Preparation
+# source AWS_Preparation/bin/activate
+# pip install -r requirements.txt
+# python manage.py migrate
+# python manage.py runserver
+# python manage.py test
+# sudo service jenkins status
+# sudo service jenkins start
+
+# git add .
+# git commit -m "text"
+# git push
