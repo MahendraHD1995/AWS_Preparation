@@ -12,6 +12,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
+                sh 'python manage.py startapp AWS_Preparation'
                 sh 'python manage.py test'
             }
         }
